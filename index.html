@@ -26,13 +26,13 @@
               </div>
               <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default" name="career">Career</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default" name="career">Career(s)</span>
                   </div>
                   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
               </div>
               <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default" name="sptree">Spec Tree</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default" name="sptree">Spec Tree(s)</span>
                   </div>
                   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
               </div>
@@ -48,11 +48,11 @@
       </div>
     </div>
       <!-- Armor and Wound statistics -->
-    <div class="jumbotron" style="padding-top: 5px; padding-bottom: 5px">
+    <div class="jumbotron justify-content-center" style="padding-top: 5px; padding-bottom: 5px;">
       <h1 class="text-center">Armor and Wounds</h1>
-      <div class="container-fluid">
+      <div class="container-fluid" style="padding-left: 100px">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-xs">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="inputGroup-sizing-default" name="cname">Soak Value:</span>
@@ -60,7 +60,7 @@
                 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-xs">
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text">Wounds</span>
@@ -69,7 +69,7 @@
               <input type="text" aria-label="Current" class="form-control" placeholder="Current">
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-xs">
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text">Strain</span>
@@ -78,7 +78,7 @@
               <input type="text" aria-label="Current" class="form-control" placeholder="Current">
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-xs">
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text">Defense</span>
@@ -147,6 +147,105 @@
 
     </div>
     </div>
+
+    <div class="container-fluid" style="margin-left: 10px;">
+      <div class="row">
+        <div class="col-md">
+          <div class="jumbotron" style="margin-left: 0px;">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">General Skills</th>
+                  <th scope="col">Career?</th>
+                  <th scope="col">Special</th>
+                  <th scope="col">Rank</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Astrogation (Int)</th>
+                  <td><input type="checkbox" name="astro_career" value="astro"><br></td>
+                  <td><input type="text" name="astro_special" placeholder="Input special values"><br></td>
+                  <td><div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="astro_rank" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Value
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="astro_rank">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                          <button class="dropdown-item" type="button">4</button>
+                          <button class="dropdown-item" type="button">5</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Athletics(Br)</th>
+                  <td><input type="checkbox" name="athletics_career" value="athletics"><br></td>
+                  <td><input type="text" name="athletics_special" placeholder="Input special values"><br></td>
+                  <td><div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="athletics_rank" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Value
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="athletics_rank">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                          <button class="dropdown-item" type="button">4</button>
+                          <button class="dropdown-item" type="button">5</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Charm(Pr)</th>
+                  <td><input type="checkbox" name="charm_career" value="charm"><br></td>
+                  <td><input type="text" name="charm_special" placeholder="Input special values"><br></td>
+                  <td><div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="charm_rank" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Value
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="charm_rank">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                          <button class="dropdown-item" type="button">4</button>
+                          <button class="dropdown-item" type="button">5</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Coercion(Will)</th>
+                  <td><input type="checkbox" name="coercion_career" value="coercion"><br></td>
+                  <td><input type="text" name="coecerion_special" placeholder="Input special values"><br></td>
+                  <td><div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="coercion_rank" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Value
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="coercion_rank">
+                          <button class="dropdown-item" type="button">1</button>
+                          <button class="dropdown-item" type="button">2</button>
+                          <button class="dropdown-item" type="button">3</button>
+                          <button class="dropdown-item" type="button">4</button>
+                          <button class="dropdown-item" type="button">5</button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md">
+
+        </div>
+      </div>
+    </div>
+
+
 
   </body>
 </html>
